@@ -16,3 +16,11 @@ function back() {
 function calcular() {
     let result = document.querySelector('#result').innerHTML;
     if(result)
+    {
+        document.querySelector('#result').innerHTML = eval(result)
+    }
+    else 
+    {
+        document.querySelector('#result').innerHTML = 'Nada...'
+    }
+}
